@@ -220,6 +220,10 @@ class LabelTool(QObject):
     ###
     ### Annoation file handling
     ###___________________________________________________________________________________________
+    def copyPreviousAnnotations(self):
+        copyAnnotations = CopyAnnotations(self)
+        copyAnnotations.copy()
+
     def loadAnnotations(self, fname, handleErrors=True):
         fname = str(fname)  # convert from QString
 
@@ -303,6 +307,7 @@ class LabelTool(QObject):
 
             if next_image is not None:
                 self.setCurrentImage(next_image)
+        self.copyPreviousAnnotations()
 
     def gotoPrevious(self, step=1):
         if self._model is not None and self._current_image is not None:
