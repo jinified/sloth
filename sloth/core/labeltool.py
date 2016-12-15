@@ -308,7 +308,7 @@ class LabelTool(QObject):
             if next_image is not None:
                 self.setCurrentImage(next_image)
             self.copyPreviousAnnotations()
-            self.view.fitInView()
+            self.view().fitInView()
 
     def gotoPrevious(self, step=1):
         if self._model is not None and self._current_image is not None:
@@ -316,7 +316,7 @@ class LabelTool(QObject):
 
             if prev_image is not None:
                 self.setCurrentImage(prev_image)
-            self.view.fitInView()
+            self.view().fitInView()
 
     def updateModified(self):
         """update all GUI elements which depend on the state of the model,
