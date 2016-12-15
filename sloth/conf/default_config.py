@@ -46,6 +46,10 @@ LABELS = (
     {
         'attributes': {
             'class':      'rect',
+            'id': ['lane', 'pole', 'red_buoy', 'green_buoy', 'yellow_buoy',
+                   'torpedo_board', 'torpedo_cover', 'torpedo_hole',
+                   'bin', 'bin_cover', 'red_coin', 'green_coin', 'tower',
+                   'red_x', 'green_x', 'table']
         },
         'inserter': 'sloth.items.RectItemInserter',
         'item':     'sloth.items.RectItem',
@@ -64,6 +68,10 @@ LABELS = (
     {
         'attributes': {
             'class':    'polygon',
+            'id': ['lane', 'pole', 'red_buoy', 'green_buoy', 'yellow_buoy',
+                   'torpedo_board', 'torpedo_cover', 'torpedo_hole',
+                   'bin', 'bin_cover', 'red_coin', 'green_coin', 'tower',
+                   'red_x', 'green_x', 'table']
         },
         'inserter': 'sloth.items.PolygonItemInserter',
         'item':     'sloth.items.PolygonItem',
